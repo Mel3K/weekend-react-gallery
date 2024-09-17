@@ -1,9 +1,13 @@
 const express = require('express');
 const router = express.Router();
+import Axios from 'axios';
 
 // PUT /gallery/like/:id
 router.put('/like/:id', (req, res) => {
-  // code here
+Axios({
+  method: 'get',
+  url:""
+})
 });
 
 // GET /gallery
