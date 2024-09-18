@@ -9,6 +9,8 @@ app.use(express.static('build'));
 
 /** ---------- EXPRESS ROUTES ---------- **/
 app.use('/api/gallery', gallery);
+console.log('in router', gallery);
+
 
 /** ---------- START SERVER ---------- **/
 app.listen(PORT,  () => {

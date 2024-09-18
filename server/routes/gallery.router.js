@@ -1,17 +1,17 @@
 const express = require('express');
 const router = express.Router();
-import Axios from 'axios';
 
+let galleryList = require()
 // PUT /gallery/like/:id
 router.put('/like/:id', (req, res) => {
-Axios({
+s({
   method: 'get',
-  url:""
+
 })
 });
 
 // GET /gallery
-router.get('/', (req, res) => {
+router.get('/api/gallery', (req, res) => {
   // code here
 });
 
