@@ -3,16 +3,7 @@ import axios from 'axios';
 
 function App() {
 
-  const [pictures, setPictures] = useState ([]);
-
-  useEffect(()= > {
-    axios.get('/');
-    setPictures(response.data.results);
-  }).catch((err) => {
-    console.log(err);
-    alert('the request did not work');
-  })
-}, []);
+ 
 
   
     return (
