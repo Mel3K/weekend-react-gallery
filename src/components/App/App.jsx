@@ -2,8 +2,29 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 
 function App() {
+// on load get gallery
+let [gallery, setGallery] = useState([]);
 
+ useEffect(() => {
+fetchGallery()
+ }, [])
+
+
+  const fetchGallery = () => {
+
+    axios.get('/api/gallery')
+    .then(response => {
+      setGallery(response.data)
+    })
+    .catch(err => {
+      alert('error getting gallery');
+      console.log(err);
+        })
+      }
+
+    
  
+
 
   
     return (
@@ -25,7 +46,8 @@ function App() {
           <img src="images/magdoor.jpeg"/>
 
       </div>
-    );
-}
+    
+  )};
+
 
 export default App;

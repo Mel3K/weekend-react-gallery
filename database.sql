@@ -16,3 +16,9 @@ VALUES
   INSERT INTO "gallery"
   ("url", "title", "description")
   VALUES('images/lanternfest.jpeg', 'Water Lantern Festival' "Seth & I at the Water Lantern Festival.");
+
+    INSERT INTO "gallery" 
+("url", "title", "description")
+VALUES
+('images/flowers.jpeg', 'Pretty purple flowers.', 'Picture of some purple flowers I saw on a walk'),
+('images/lanternfest.jpeg','Water lantern festival.', 'Picture of me and my husband at the Water lantern festival at Lake Phalen.');
